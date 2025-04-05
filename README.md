@@ -1,6 +1,14 @@
-# Getting Started with Create React App
+# Lucky Draw Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a web application for a lucky draw game, built with React and styled using CSS. The application allows users to select a pool and participate in a lucky draw.
+
+## Features
+
+- Responsive design that works on all screen sizes.
+- Interactive spinning wheel animation.
+- Cards displayed inline with responsive adjustments.
+- Navigation bar and footer for easy navigation.
+- Deployed on Vercel for easy access.
 
 ## Available Scripts
 
@@ -8,7 +16,7 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
@@ -41,9 +49,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+To learn more about React, check out the [React documentation](https://reactjs.org/).
 
 ### Code Splitting
 
@@ -63,7 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The application is deployed on Vercel. You can access it at [your-vercel-url].
 
 ### `npm run build` fails to minify
 
