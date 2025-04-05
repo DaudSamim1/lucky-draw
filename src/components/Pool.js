@@ -17,6 +17,6 @@ function Pool() {
       </div>
     </div>
   );
-} 
+}  
 
 export default Pool;
