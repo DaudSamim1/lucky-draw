@@ -230,19 +230,21 @@ h1 {
 .card {
   text-decoration: none;
   color: inherit;
-  width: 90%;
-  max-width: 200px;
+  width: 20vw; /* Set width based on viewport width */
+  height: 20vw; /* Set height based on viewport width */
+  max-width: 150px; /* Maximum size for larger screens */
+  max-height: 150px; /* Maximum size for larger screens */
   margin: 10px;
   border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  background-color: white;
+  border-radius: 100%; /* Set to 100% for a perfect circle */
+  background: linear-gradient(145deg, #f06d7d, #e65a68); /* Add gradient for 3D effect */
+  box-shadow: 6px 6px 12px #c54d55, -6px -6px 12px #ff7b87; /* Enhance 3D look */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   transition: transform 0.3s;
+  border: 3px solid #EF626C;
 }
 
 .card:hover {
@@ -258,26 +260,96 @@ h1 {
   width: 100%;
 }
 
-/* Media queries for larger screens */
-@media (min-width: 600px) {
-  .card {
-    width: 45%;
-  }
-}
-
-@media (min-width: 900px) {
-  .card {
-    width: 30%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .card {
-    width: 22%;
-  }
-}
-
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.styled-table {
+  width: 100%; /* Use full width for responsiveness */
+  max-width: 600px; /* Maximum width for larger screens */
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  overflow-x: auto; /* Enable horizontal scrolling on small screens */
+  border: 1px solid #EF626C; /* Added light border color */
+}
+
+.styled-table thead tr {
+  background-color: #EF626C;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  border: 1px solid #dddddd; /* Add border to each cell */
+  text-align: center; /* Center-align text */
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #EF626C;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #EF626C;
+}
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #EF626C;
+}
+
+.styled-table thead th {
+  text-align: center; /* Center-align text in the header */
+  color: black; /* Set text color to black */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .styled-table th,
+  .styled-table td {
+    padding: 8px; /* Reduce padding for smaller screens */
+  }
+}
+
+.button-container {
+  position: relative;
+  width: 100%;
+  margin: 20px 0; /* Equal margin from top and bottom */
+  display: flex;
+  justify-content: center;
+}
+
+.join-button {
+  padding: 10px 20px;
+  background-color: #EF626C;
+  color: black;
+  border: 2px solid #EF626C;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.join-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .styled-table th,
+  .styled-table td {
+    padding: 8px; /* Reduce padding for smaller screens */
+  }
 }

@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Pool from './components/Pool';
 import NotFound from './components/NotFound';
 import Layout from './components/Layout';
+import PoolDetails from './components/PoolDetails';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/pool" element={<Pool />} />
+          <Route path="/pool/:poolId" element={<PoolDetails />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
