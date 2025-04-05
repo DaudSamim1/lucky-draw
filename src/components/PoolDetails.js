@@ -19,7 +19,7 @@ function PoolDetails() {
       <h1>Enter Lucky Draw of {poolId}rs</h1>
       <p>Maximum users for the pool: 10 users</p>
       <div className="button-container">
-        <a href={`tel:*786*1*1*1*03090796902*${poolId}#`} className="join-button-link">
+        <a href={`tel:*786*1*1*1*03044519969*${poolId}#`} className="join-button-link">
           <button className="join-button">
             JOIN LUCKY DRAW
           </button>
