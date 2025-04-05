@@ -5,15 +5,15 @@ function Pool() {
     <div className="container">
       <h1>Select the pool to join lucky draw</h1>
       <div className="card-container">
-        <div className="card">
+        <a href="tel:*786#" className="card">
           <h2>100rs</h2>
-        </div>
-        <div className="card">
+        </a>
+        <a href="tel:*786#" className="card">
           <h2>500rs</h2>
-        </div>
-        <div className="card">
+        </a>
+        <a href="tel:*786#" className="card">
           <h2>1000rs</h2>
-        </div>
+        </a>
       </div>
     </div>
   );

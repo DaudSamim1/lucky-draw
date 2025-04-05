@@ -228,6 +228,8 @@ h1 {
 }
 
 .card {
+  text-decoration: none;
+  color: inherit;
   width: 90%;
   max-width: 200px;
   margin: 10px;
@@ -273,4 +275,9 @@ h1 {
   .card {
     width: 22%;
   }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
